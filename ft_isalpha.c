@@ -6,12 +6,12 @@
  *	of EOF
  */
 
-int	isalpha(int c)
+int	ft_isalpha(int c)
 {
-	if (c > 'a' && c < 'z')
-		return(true);
-	else if (c > 'A' && c < 'Z') 
-		return(true);
+	if (c >= 'a' && c <= 'z')
+		return(c);
+	else if (c >= 'A' && c <= 'Z') 
+		return(c);
 	else
 		return(0);
 }
