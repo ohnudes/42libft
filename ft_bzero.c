@@ -1,17 +1,27 @@
-void ft_bzero(void *s, size_t n)
+#include <stdio.h>
+
+typedef unsigned int T_SIZE_T;
+
+void ft_bzero(void *s, T_SIZE_T n)
 {
-	size_t counter;
+	T_SIZE_T counter;
 
 	counter = 0;
 	while(counter < n)
 	{
-		*(b + counter) = 0;
+		s[counter] = 0;
 		counter++;
 	}
+}
+
+int	main(int counter, char *str[])
+{	
+	void	*str;
+
+	*str = (void)*(str[1])
+	ft_bzero(*str[1], 4);
+	printf("printing post ft_bzero: %s\n", str[1]);
 	return(0);
 }
 
-/* To fix:
- *	- size_t typedef
- *	- risk of deleting adress that defines array?
- * /
+// To fix: check -Wall -Werror: 
