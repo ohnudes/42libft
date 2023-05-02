@@ -18,13 +18,23 @@ void *memmove(void *dst, const void *src, size_t len);
 
 int main(int argc, char *arg[]) 
 {
-	// CHARACTER CLASSIFICATION FUNCTIONS
-// CTYPE.h
- 	printf("result of ft_isalpha with arg is %d\n", ft_isalpha(*arg[1]));
-	printf("result of ft_isdigit is %d\n", ft_isdigit(*arg[1]));
-//  printf("result of ft_isalnum is %d\n", ft_isalnum(*arg[1]));
-//  printf("result of ft_isascii is %d\n", ft_isascii(*arg[1]));
-//  printf("result of ft_isprint is %d\n", ft_isprint(*arg[1]));
+	if (argc != 2)
+		return(0);
 
-  return(0);
+	// CHARACTER CLASSIFICATION FUNCTIONS
+	// CTYPE.h
+	printf("Given argument: %c, result of ft_isalpha is: %d\n", *arg[1], ft_isalpha(*arg[1]));
+	printf("Given argument: %c, result of isalpha is: %d\n", *arg[1], isalpha(*arg[1]));
+	printf("Given argument: %c, result of ft_isdigit is: %d\n", *arg[1], ft_isdigit(*arg[1]));
+	printf("Given argument: %c, result of isdigit is: %d\n", *arg[1], isdigit(*arg[1]));
+	printf("Given argument: %c, result of ft_isalnum is: %d\n", *arg[1], ft_isalnum(*arg[1]));
+	printf("Given argument: %c, result of isalnum is: %d\n", *arg[1], isalnum(*arg[1]));
+	printf("Given argument: %c, result of ft_isascii is: %d\n", *arg[1], ft_isascii(*arg[1]));
+	printf("Given argument: %c, result of isascii is: %d\n", *arg[1], isascii(*arg[1]));
+	printf("Given argument: %c, result of ft_isprint is: %d\n", *arg[1], ft_isprint(*arg[1]));
+	printf("Given argument: %c, result of isprint is: %d\n", *arg[1], isprint(*arg[1]));
+
+	return(0);
 }
+
+// !cc main.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c
