@@ -8,12 +8,5 @@
 
 int	ft_isprint(int c)
 {
-	if (c > 32 && c < 126)
-		return(true);
-	else
-		return(0);
+	return(c >= 32 && c <= 126);
 }
-
-/* To check:
- *		Return value for true.
- */
