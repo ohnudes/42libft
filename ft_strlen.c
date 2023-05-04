@@ -1,8 +1,8 @@
 typedef unsigned int	T_SIZE_T;
 
-size_t ft_strlen(const char *s)
+T_SIZE_T ft_strlen(const char *s)
 {
-	size_t counter;
+	T_SIZE_T counter;
 
 	counter = 0;
 	while (s[counter])
