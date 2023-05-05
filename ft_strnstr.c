@@ -1,11 +1,7 @@
-#ifndef T_SIZE_T
-typedef unsigned int T_SIZE_T ;
-#endif 
-
-char	*strnstr(const char *big, const char *little, T_SIZE_T len)
+char	*strnstr(const char *big, const char *little, size_t len)
 {
-	T_SIZE_T i;
-	T_SIZE_T j;
+	size_t i;
+	size_t j;
 
 	i = 0;
 	if (little[i] == 0)
