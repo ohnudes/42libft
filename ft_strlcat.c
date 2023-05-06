@@ -1,22 +1,24 @@
-typedef unsigned int t_size_t;
+#include "libft.h"
 
-t_size_t ft_strlcat(char *dst, const char *src, t_size_t size)
+size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
-	t_size_t counter;
+	size_t counter;
 
-	counter = 0;
-	while (dst[counter])
-		counter++;
-	if (dst[counter]) 
+	counter = size - ft_strlen(dst) - 1;
+	while (*dst	!= '\0')
+		dst++;
+	if (size - ft_strlen(dst) - 1 > 0) 
 	{
-		while (counter < size - 1) 
+		while (*src && counter > 0) 
 		{
-			dst[counter] = src[counter];
-			counter++;
+			*dst = *(char*)src;
+			counter--;
+			dst++;
+			src++;
 		}
-		dst[size - 1] = 0;
+		*dst = '\0';
 	}
-	return (size - 1);
+	return (ft_strlen(dst) + ft_strlen(src));
 }
 
 // how to check for the freakin free byte? -> maybe 

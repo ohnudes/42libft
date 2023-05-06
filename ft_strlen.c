@@ -1,11 +1,11 @@
-typedef unsigned int	T_SIZE_T;
+#include "libft.h"
 
-T_SIZE_T ft_strlen(const char *s)
+size_t ft_strlen(const char *s)
 {
-	T_SIZE_T counter;
+	size_t counter;
 
 	counter = 0;
-	while (s[counter])
+	while (*s)
 		counter++;
 	return(counter);
 }
