@@ -1,19 +1,16 @@
-typedef unsigned int t_size_t;
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {	
-	t_size_t counter;
 	char	*ptr;
 
-	counter = 0;
-	while (str[counter])
+	while (*str)
 	{
-		if (str[counter] == c)
-			ptr = &(str + counter);
-		counter++;
+		if (*str == c)
+			ptr = (char*)&(str);
+		str++;
 	}
-	if (str[counter] == c)
+	if (*ptr)
 		return(ptr);
-	return(0);
+	return(NULL);
 }
-// confirm pointer buffer.
