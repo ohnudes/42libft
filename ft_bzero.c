@@ -1,27 +1,15 @@
-#include <stdio.h>
+#include "libft.h"
 
-typedef unsigned int T_SIZE_T;
-
-void ft_bzero(void *s, T_SIZE_T n)
+void	ft_bzero(void *s, size_t n)
 {
-	T_SIZE_T counter;
+	size_t counter;
+	char	*ptr;
 
 	counter = 0;
+	ptr = (char*)s;
 	while(counter < n)
 	{
-		s[counter] = 0;
+		ptr[counter] = '\0';
 		counter++;
 	}
 }
-
-int	main(int counter, char *str[])
-{	
-	void	*str;
-
-	*str = (void)*(str[1])
-	ft_bzero(*str[1], 4);
-	printf("printing post ft_bzero: %s\n", str[1]);
-	return(0);
-}
-
-// To fix: check -Wall -Werror: 
