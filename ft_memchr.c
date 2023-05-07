@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 15:19:45 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:20:03 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/07 15:53:13 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/07 16:05:13 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char *cast;
-	int	result;
+	unsigned char *c_s;
+	unsigned char c_c;
 
-	cast = (char*)nptr;
-	result = 0;
-	while (*nptr && ft_isdigit(*nptr))
+	c_s = (unsigned char *)s;
+	c_c = (unsigned char)c; 
+	while (*c_s != c_c && n > 0)
 	{
-		result = result * 10 + (*nptr - 48);
-		nptr++;
+		c_s++;
+		n--;
 	}
-	return(result);
+	if (*c_s == c_c)
+		return(c_s);
+	return(NULL);
 }
-/* Ascii to Int */

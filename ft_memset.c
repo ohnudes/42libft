@@ -1,24 +1,31 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/07 14:57:51 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/07 15:43:20 by nmaturan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void *ft_memset(void *b, int c, size_t len)
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t len)
 {
-	size_t counter;
-	int *cast;
+	size_t index;
+	unsigned char *cast;
 
-	cast = (int*)b;
-	counter = 0;
-	while(counter < len)
+	cast = (unsigned char *)s;
+	index = 0;
+	while(index < len)
 	{
-		cast[counter] = (int)c; 
-		counter++;
+		cast[index] = (unsigned char)c;
+		index++;
 	}
-	return(b);
+	return(s);
 }
 
-int	main(void)
-{
-	char	*str = "hola";
-
-	printf("str antes de memset: %s\npostft: %p\n", str, ft_memset(str, '1', 5));
-	return(0);
-}
+//casting into char, given that char pastes into each byte rather than 
+//int doing it for 4.
