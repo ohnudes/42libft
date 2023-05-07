@@ -9,7 +9,7 @@ OBJECTS = ft_isalpha.o ft_isalnum.o ft_isdigit.o ft_isprint.o ft_isascii.o \
 		  ft_memcmp.o
 
 %.o: %.c
-		@cc -c ${CFLAGS} $< -o $@
+	@cc -c ${CFLAGS} $< -o $@
 
 ${NAME}:: ${OBJECTS}
 	@${LIBFT} ${NAME} ${OBJECTS}
