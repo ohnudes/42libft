@@ -14,16 +14,16 @@
 
 int	ft_atoi(const char *nptr)
 {
-	char *cast;
-	int	result;
+	char	*cast;
+	int		result;
 
-	cast = (char*)nptr;
+	cast = (char *)nptr;
 	result = 0;
 	while (*nptr && ft_isdigit(*nptr))
 	{
 		result = result * 10 + (*nptr - 48);
 		nptr++;
 	}
-	return(result);
+	return (result);
 }
 /* Ascii to Int */

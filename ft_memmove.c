@@ -18,9 +18,9 @@ void	*memmove(void *dst, const void *src, size_t len)
 	char	*c_src;
 	size_t	index;
 
-	if (src != dst) 
+	if (src != dst)
 	{
-		if(c_src < c_dst)
+		if (c_src < c_dst)
 		{
 			while (len--)
 				*(c_dst + len) = *(c_src + len);
@@ -36,6 +36,5 @@ void	*memmove(void *dst, const void *src, size_t len)
 			}
 		}
 	}
-	return(dst);
+	return (dst);
 }
-

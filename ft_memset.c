@@ -14,17 +14,17 @@
 
 void	*ft_memset(void *s, int c, size_t len)
 {
-	size_t index;
-	unsigned char *cast;
+	unsigned char	*cast;
+	size_t			index;
 
 	cast = (unsigned char *)s;
 	index = 0;
-	while(index < len)
+	while (index < len)
 	{
 		cast[index] = (unsigned char)c;
 		index++;
 	}
-	return(s);
+	return (s);
 }
 
 //casting into char, given that char pastes into each byte rather than 

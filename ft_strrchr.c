@@ -19,10 +19,10 @@ char	*ft_strrchr(const char *str, int c)
 	while (*str)
 	{
 		if (*str == c)
-			ptr = (char*)&(str);
+			ptr = (char *)&(str);
 		str++;
 	}
 	if (*ptr)
-		return(ptr);
-	return(NULL);
+		return (ptr);
+	return (NULL);
 }
