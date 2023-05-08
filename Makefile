@@ -1,28 +1,49 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/05/08 12:05:19 by nmaturan          #+#    #+#              #
+#    Updated: 2023/05/08 12:05:32 by nmaturan         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Nombre del programa
 NAME = libft.a
-CFLAGS = -Wall -Wextra -Werror
-LIBF = ar rc
 
-OBJECTS = ft_isalpha.o ft_isalnum.o ft_isdigit.o ft_isprint.o ft_isascii.o \
-		  ft_toupper.o ft_tolower.o ft_atoi.o ft_strncmp.o ft_strnstr.o \
-		  ft_strchr.o ft_strrchr.o ft_strlen.o ft_strlcpy.o ft_strlcat.o \
-		  ft_bzero.o ft_memset.o ft_memcpy.o ft_memmove.o ft_memchr.o \
-		  ft_memcmp.o
+# Flags al compilar
+FLAGS = -Wall -Wextra -Werror
 
-%.o: %.c
-	@cc -c ${CFLAGS} $< -o $@
+# Linker
+LNK = ar rc
 
-${NAME}:: ${OBJECTS}
-	@${LIBFT} ${NAME} ${OBJECTS}
-	@ranlib ${NAME}
+# Functions
+SRC = ft_isalpha.c ft_isalnum.c ft_isdigit.c ft_isprint.c ft_isascii.c \
+	  ft_toupper.c ft_tolower.c ft_atoi.c ft_strncmp.c ft_strnstr.c \
+	  ft_strchr.c ft_strrchr.c ft_strlen.c ft_strlcpy.c ft_strlcat.c \
+	  ft_bzero.c ft_memset.c ft_memcpy.c ft_memmove.c ft_memchr.c \
+	  ft_memcmp.c
 
-ALL: ${NAME}
+# Objects
+OBJ = $(SRC:.c=.o)
+
+.PHONY: ALL CLEAN FCLEAN RE
+
+ALL: $(NAME)
+
+$(NAME): ${OBJ}
+	@$(LNK) $(NAME) $(OBJ)
+
+OBJ: %.c
+	@cc -c $(FLAGS) $< -o $@
 
 FCLEAN: CLEAN
-	@echo "$HEADER"
-	@rm -f ${NAME}
+	@rm -f $(NAME)
 
 CLEAN:
-	@rm -f ${OBJECTS}
+	@rm -f $(OBJ)
 
 RE: FCLEAN ALL
-	.PHONY: CLEAN ALL FCLEAN RE
+
