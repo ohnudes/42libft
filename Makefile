@@ -29,9 +29,9 @@ SRC = ft_isalpha.c ft_isalnum.c ft_isdigit.c ft_isprint.c ft_isascii.c \
 # Objects
 OBJ = $(SRC:.c=.o)
 
-.PHONY: ALL CLEAN FCLEAN RE
+# Compilacion del programa.
 
-ALL: $(NAME)
+all: $(NAME)
 
 $(NAME): ${OBJ}
 	@$(LNK) $(NAME) $(OBJ)
@@ -39,11 +39,12 @@ $(NAME): ${OBJ}
 OBJ: %.c
 	@cc -c $(FLAGS) $< -o $@
 
-FCLEAN: CLEAN
+fclean: clean
 	@rm -f $(NAME)
 
-CLEAN:
+clean:
 	@rm -f $(OBJ)
 
-RE: FCLEAN ALL
+re: fclean all
 
+.PHONY: all clean fclean re
