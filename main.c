@@ -1,5 +1,6 @@
 #include <ctype.h>
 #include <stdio.h>
+#include "libft.h"
 
 // CHARACTER CLASSIFICATION FUNCTIONS
 int ft_isalpha(int c);
