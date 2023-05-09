@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:16:15 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:16:17 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/09 10:10:38 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	counter;
 
 	counter = 0;
-	while (*s != '\0')
+	while (*s++)
 		counter++;
 	return (counter);
 }
