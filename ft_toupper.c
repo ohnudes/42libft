@@ -6,13 +6,13 @@
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:19:14 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/09 10:25:27 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/10 13:50:26 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
 		c == c - 22;

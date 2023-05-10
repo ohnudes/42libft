@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:19:38 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:19:39 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/10 13:54:30 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t	len_src;
 	size_t	counter;
+	size_t	len_src;
 
 	counter = 0;
 	len_src = (size_t)ft_strlen(src);

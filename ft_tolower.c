@@ -6,13 +6,13 @@
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:19:29 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:19:33 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/10 13:51:08 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		c += 22;
