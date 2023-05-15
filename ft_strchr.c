@@ -13,10 +13,15 @@
 #include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
-{	
+{
+	unsigned char	holder;
+
+	holder = (unsigned char)c;
+	if (*str == '\0' || c == '\0')
+		return (NULL);
 	while (*str)
 	{
-		if (*str == c)
+		if (*str == holder)
 			return ((char *)str);
 		str++;
 	}
