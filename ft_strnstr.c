@@ -6,13 +6,13 @@
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:18:39 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:18:41 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/15 20:17:53 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;

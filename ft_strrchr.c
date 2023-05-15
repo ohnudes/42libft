@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:18:20 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:18:21 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/15 22:36:13 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,19 @@
 
 char	*ft_strrchr(const char *str, int c)
 {	
-	char	*ptr;
+	unsigned char	*ptr;
 
+	ptr = '\0';
+	if (*str == (unsigned char) c)
+		ptr = (unsigned char *) str;
 	while (*str)
 	{
-		if (*str == c)
-			ptr = (char *)&(str);
 		str++;
+		if (*str == c)
+			ptr = (unsigned char *) str;
 	}
 	if (*ptr)
-		return (ptr);
+		return ((char*) ptr);
 	return (NULL);
 }
+
