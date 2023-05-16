@@ -6,27 +6,30 @@
 /*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 15:18:20 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/15 22:36:13 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/16 13:11:24 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
-{	
+{
 	unsigned char	*ptr;
+	int				len_str;
 
-	ptr = '\0';
-	if (*str == (unsigned char) c)
-		ptr = (unsigned char *) str;
-	while (*str)
+	len_str = ft_strlen(str);
+	if (c == '\0')
+		return ((char *)(str + len_str));
+	if (!*str)
+		return (NULL);
+	while (len_str >= 0)
 	{
-		str++;
-		if (*str == c)
-			ptr = (unsigned char *) str;
+		if (str[len_str] == (unsigned char) c)
+		{
+			ptr = (unsigned char *)(str + len_str);
+			return ((char *)ptr);
+		}
+		len_str--;
 	}
-	if (*ptr)
-		return ((char*) ptr);
 	return (NULL);
 }
-
