@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/09 10:13:45 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/09 10:40:11 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/16 14:35:29 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/16 14:35:31 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

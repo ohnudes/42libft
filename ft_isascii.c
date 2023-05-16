@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 15:16:28 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:16:41 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/16 14:33:50 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/16 14:33:52 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

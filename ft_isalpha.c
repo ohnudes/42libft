@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 15:17:11 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:17:18 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/16 14:36:12 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/16 14:36:37 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

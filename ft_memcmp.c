@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 16:05:36 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 16:10:55 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/16 14:35:14 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/16 14:35:15 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

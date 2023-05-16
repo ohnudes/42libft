@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 15:16:48 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/07 15:16:50 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/16 14:34:46 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/16 14:34:48 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

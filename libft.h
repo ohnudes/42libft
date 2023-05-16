@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmaturan <nmaturan@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/10 10:20:07 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/10 16:45:09 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/16 14:34:20 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/16 14:34:34 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
