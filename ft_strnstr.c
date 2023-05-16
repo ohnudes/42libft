@@ -6,13 +6,11 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:34:56 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/16 22:06:15 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/16 22:06:49 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
