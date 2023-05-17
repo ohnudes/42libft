@@ -12,13 +12,55 @@
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s, size_t n)
+char	*ft_strdup(const char *s)
 {
-	char	*c_s;
-	size_t	index;
+	char	*s_cpy;
+	size_t	s_len;
+	size_t	i;
 
-	c_s = (char *)malloc(sizeof(char) * n);
-	while (index++ && index <= n)
-		c_s[index] = s[index];
-	return (c_s);
+	s_len = ft_strlen(s);
+	s_cpy = malloc(sizeof(char) * s_len + 1);
+	i = 0;
+	if (!s_cpy)
+		return (NULL);
+	while (i <= s_len)
+	{
+		s_cpy[i] = s[i];
+		i++;
+	}
+	return (s_cpy);
 }
+/*
+#include "libft.h"
+#include <stdio.h>
+
+char	*ft_strdup(const char *s)
+{
+	char	*s_cpy;
+	size_t	s_len;
+	size_t	i;
+
+	s_len = ft_strlen(s);
+	s_cpy = malloc(sizeof(char) * s_len);
+	i = 0;
+	if (!s_cpy)
+		return (NULL);
+	while (i <= s_len)
+	{
+		s_cpy[i++] = s[i++];
+		printf("cpy[%zu]=%c\n",i,s_cpy[i]);
+		i++;
+	}
+	return (s_cpy);
+}
+
+int	main(void)
+{
+	char	*s = "123";
+	char	*s_cpy;
+
+	s_cpy = ft_strdup(s);
+	printf("s = %s\ns_cpy = %s\n", s, s_cpy);
+	free(s_cpy);
+	return (0);
+}*/
