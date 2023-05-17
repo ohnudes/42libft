@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:36:20 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/16 14:36:24 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/17 11:32:13 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,15 @@
 
 void	*ft_memset(void *s, int c, size_t len)
 {
-	unsigned char	*cast;
-	size_t			index;
+	char	*cast;
+	size_t	i;
 
-	cast = (unsigned char *)s;
-	index = 0;
-	while (index < len)
+	cast = (char *)s;
+	i = 0;
+	while (i < len)
 	{
-		cast[index] = (unsigned char)c;
-		index++;
+		cast[i] = (unsigned char)c;
+		i++;
 	}
 	return (s);
 }
-
-//casting into char, given that char pastes into each byte rather than 
-//int doing it for 4.
