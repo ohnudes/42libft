@@ -19,6 +19,8 @@ void	*ft_memcpy(void	*dst, const void *src, size_t n)
 
 	index = 0;
 	c_dst = (char *)dst;
+	if (!src && !dst)
+		return (NULL);
 	while (index < n)
 	{
 		c_dst[index] = *(char *)(src + index);
@@ -27,6 +29,16 @@ void	*ft_memcpy(void	*dst, const void *src, size_t n)
 	return (c_dst);
 }
 
-/* To check:
- *	- what is src and dst overlap?
- */
+// e.cases: if n == 0
+/*
+int	main(int c, char *argv[1])
+{
+	char	dst[20];
+	char	ndst[20];
+
+	ft_memcpy(0, 0, 3);
+	printf("post ft dst = %s\n", dst);
+	//memcpy(0, 0, 3);
+	//printf("post O dst = %s\n", dst);
+	return(0);
+}*/
