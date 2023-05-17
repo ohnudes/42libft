@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:36:42 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/16 14:36:44 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/17 12:20:44 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	index;
+	size_t	i;
 	char	*substr;
 
 	if (start == '\0')
@@ -22,13 +22,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr = malloc(sizeof(char) * len);
 	while (*s != start)
 		s++;
-	// casting s as unsigned int?
 	if (*s == start)
 	{
-		while (*s++ && index <= len)
+		while (*s++ && i <= len)
 		{
-			substr[index] = *s;
-			index++;
+			substr[i] = *s;
+			i++;
 		}
 	}
 	return (substr);
