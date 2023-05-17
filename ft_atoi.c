@@ -16,14 +16,16 @@
 int	ft_atoi(const char *nptr)
 {
 	int		result;
+	int		nat_def;
 
 	result = 0;
+	nat_def = 0;
 	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 	{
 		if (*nptr == '-')
-			result *= -1;
+			nat_def = 1; 
 		nptr++;
 	}
 	while (*nptr && ft_isdigit(*nptr))
@@ -31,35 +33,15 @@ int	ft_atoi(const char *nptr)
 		result = result * 10 + (*nptr - 48);
 		nptr++;
 	}
-	return (result);
-}
-/*
-int	ft_atoi(const char *nptr)
-{
-	int		result;
-
-	result = 0;
-	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
-		nptr++;
-	if (*nptr == '-' || *nptr == '+')
-	{
-		if (*nptr == '-')
-			result *= -1;
-		nptr++;
-	}
-	while (*nptr && ft_isdigit(*nptr))
-	{
-		result = result * 10 + (*nptr - 48);
-		nptr++;
-	}
-	printf("last atoi position = %c\n", *(nptr - 1));
+	if (nat_def == 1)
+		result = -result;
 	return (result);
 }
 
 int	main(void)
 {
-	char	*str = "  -+123456789";
+	char	*str = "  2147483649";
 	printf("ft_atoi result = %d\n", ft_atoi(str));
 	printf("atoi result = %d\n", atoi(str));
 	return (0);
-}*/
+}
