@@ -24,7 +24,7 @@ int	ft_atoi(const char *nptr)
 	if (*nptr == '-' || *nptr == '+')
 	{
 		if (*nptr == '-')
-			nat_def = 1; 
+			nat_def = 1;
 		nptr++;
 	}
 	while (*nptr && ft_isdigit(*nptr))
