@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/16 14:32:43 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/16 14:33:30 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/17 15:46:53 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/17 15:47:00 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -36,12 +35,4 @@ int	ft_atoi(const char *nptr)
 	if (nat_def == 1)
 		result = -result;
 	return (result);
-}
-
-int	main(void)
-{
-	char	*str = "  2147483649";
-	printf("ft_atoi result = %d\n", ft_atoi(str));
-	printf("atoi result = %d\n", atoi(str));
-	return (0);
 }
