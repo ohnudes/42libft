@@ -11,14 +11,21 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {
-	char	*cast;
 	int		result;
 
-	cast = (char *)nptr;
 	result = 0;
+	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
+		nptr++;
+	if (*nptr == '-' || *nptr == '+')
+	{
+		if (*nptr == '-')
+			result *= -1;
+		nptr++;
+	}
 	while (*nptr && ft_isdigit(*nptr))
 	{
 		result = result * 10 + (*nptr - 48);
@@ -26,4 +33,33 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result);
 }
-/* Ascii to Int */
+/*
+int	ft_atoi(const char *nptr)
+{
+	int		result;
+
+	result = 0;
+	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
+		nptr++;
+	if (*nptr == '-' || *nptr == '+')
+	{
+		if (*nptr == '-')
+			result *= -1;
+		nptr++;
+	}
+	while (*nptr && ft_isdigit(*nptr))
+	{
+		result = result * 10 + (*nptr - 48);
+		nptr++;
+	}
+	printf("last atoi position = %c\n", *(nptr - 1));
+	return (result);
+}
+
+int	main(void)
+{
+	char	*str = "  -+123456789";
+	printf("ft_atoi result = %d\n", ft_atoi(str));
+	printf("atoi result = %d\n", atoi(str));
+	return (0);
+}*/
