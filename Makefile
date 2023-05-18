@@ -6,18 +6,18 @@
 #    By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/16 14:32:57 by nmaturan          #+#    #+#              #
-#    Updated: 2023/05/16 14:33:02 by nmaturan         ###   ########.fr        #
+#    Updated: 2023/05/18 14:18:10 by nmaturan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Nombre del programa
 NAME = libft.a
 
+# Include
+INC = libft.h
+
 # Flags al compilar
 FLAGS = -Wall -Wextra -Werror
-
-# Linker
-LNK = ar rc
 
 # Functions
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
@@ -29,14 +29,14 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 # Objects
 OBJ = $(SRC:.c=.o)
 
-# Compilacion del programa.
+#### Compilacion del programa ####
 
 all: $(NAME)
 
-$(NAME): ${OBJ}
-	@$(LNK) $(NAME) $(OBJ)
+$(NAME): $(OBJ)
+	@ar rc $@ $(OBJ) $(INC) 
 
-OBJ: %.c
+$(OBJ): $(SRC)
 	@cc -c $(FLAGS) $< -o $@
 
 fclean: clean
