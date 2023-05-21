@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:46:53 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/17 15:47:00 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/21 15:09:48 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_atoi(const char *nptr)
 			nat_def = 1;
 		nptr++;
 	}
-	while (*nptr && ft_isdigit(*nptr))
+	while (ft_isdigit(*nptr))
 	{
 		result = result * 10 + (*nptr - 48);
 		nptr++;
