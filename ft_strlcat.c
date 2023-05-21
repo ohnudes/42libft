@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 10:50:54 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/17 10:51:34 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/21 14:01:21 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (len_src);
 	if (len_dst >= dstsize)
 		return (dstsize + len_src);
-	while (len_dst + i + 1 <= dstsize)
+	if (dstsize > 0)
 	{
-		dst[len_dst + i] = src[i];
-		i++;
+		while (i < len_src && len_dst + i < dstsize - 1)
+		{
+			dst[len_dst + i] = src[i];
+			i++;
+		}
+		dst[len_dst + i] = '\0';
 	}
-	dst[dstsize - 1] = '\0';
 	return (len_src + len_dst);
 }
