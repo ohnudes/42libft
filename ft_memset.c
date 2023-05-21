@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:36:20 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/17 11:32:13 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/21 11:29:21 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memset(void *s, int c, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		cast[i] = (unsigned char)c;
+		cast[i] = (char)c;
 		i++;
 	}
 	return (s);
