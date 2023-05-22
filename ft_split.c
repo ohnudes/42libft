@@ -7,14 +7,16 @@ static void free_all(char	**big, size_t count_check)
 	{
 		if (count_check)
 		{
-			while (count_check <= 0)
+			free(big + count_check);
+			while (count_check != 0)
 			{
-				free(big + count_check);
 				count_check--;
+				free(big + count_check);
+				printf("big + %zu freed\n", count_check);
 			}
 		}
 		printf("Step 2: big created\n");
-		free(big);
+		//free(big);
 	}
 	if (!big)
 		free(big);
