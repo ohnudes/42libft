@@ -1,33 +1,49 @@
 #include "libft.h"
 #include <stdio.h>
 
-char	*ft_split(const char *s, const char c)
+static size_t str_count(const char *s, const char c)
 {
-	//char	**matrix;
-	char	*ns;
-	//size_t	t_str;
-	size_t	ref;
+	size_t	count;
+	size_t	i;
 
-	//t_str = 0;
-	ns = (char *)s;
-	if (*ns)
+	i = 0;
+	count = 0;
+	if (s[i] && s[i] != c)
+		count++;
+	while (s[i])
 	{
-		if (*ns != c && (ft_strchr(s, 0) || ft_strchr(s, c)))
+		while (s[i] && s[i] != c)
+			i++;
+		while (s[i] && s[i] == c)
 		{
-			ns = ft_strchr(s, c);
-			//t_str++;
+			i++;
+			if (s[i] && s[i] != c)
+				count++;
 		}
 	}
-	return (ns);
+	return (count);
+}
+
+char	**ft_split(const char *s, const char c)
+{
+	char	**n_arr;
+	size_t	i;
+	size_t	ref;
+
+	i = 0;
+	n_arr = (char **)malloc(sizeof(char*) * (str_count(s, c) + 1));
+	if (!n_arr)
+		return (NULL);
+	while (i < str_count(s, c))
+		
 }
 
 int	main(void)
 {
 	char	*test;
-	char	*a = "123 123";
+	char	*a = "123 123 1";
 	const char	c = ' ';
 
-	test = malloc(ft_strlen(a));
 	test = ft_split(a, c); 
 	printf("test = %s\n", test);
 	return (0);

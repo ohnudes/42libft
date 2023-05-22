@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:46:53 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/21 15:09:48 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/21 17:24:57 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,23 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int		result;
+	int		res;
 	int		nat_def;
 
-	result = 0;
-	nat_def = 0;
+	res = 0;
+	nat_def = 1;
 	while ((*nptr >= 9 && *nptr <= 13) || (*nptr == 32))
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 	{
 		if (*nptr == '-')
-			nat_def = 1;
+			nat_def = -1;
 		nptr++;
 	}
 	while (ft_isdigit(*nptr))
 	{
-		result = result * 10 + (*nptr - 48);
+		res = res * 10 + (*nptr - 48);
 		nptr++;
 	}
-	if (nat_def == 1)
-		result = -result;
-	return (result);
+	return ((nat_def)*(res));
 }
