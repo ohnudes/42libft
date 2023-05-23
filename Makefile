@@ -6,7 +6,7 @@
 #    By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/16 14:32:57 by nmaturan          #+#    #+#              #
-#    Updated: 2023/05/21 11:28:42 by nmaturan         ###   ########.fr        #
+#    Updated: 2023/05/23 11:49:54 by nmaturan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	  ft_strchr.c ft_strrchr.c ft_strlen.c ft_strlcpy.c ft_strlcat.c \
 	  ft_bzero.c ft_memset.c ft_memcpy.c ft_memmove.c ft_memchr.c \
 	  ft_memcmp.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c \
-	  ft_strtrim.c 
+	  ft_strtrim.c ft_split.c 
 
 # Objects
 OBJ = $(SRC:.c=.o)
