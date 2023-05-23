@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 15:46:53 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/21 17:24:57 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/23 13:54:36 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ int	ft_atoi(const char *nptr)
 		res = res * 10 + (*nptr - 48);
 		nptr++;
 	}
-	return ((nat_def)*(res));
+	return ((nat_def) * (res));
 }
