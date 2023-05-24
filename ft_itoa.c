@@ -1,48 +1,74 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/23 18:08:49 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/23 18:47:23 by nmaturan         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
+int	digit_count(int n)
+{
+	int	n_cpy;
+	int	digits;
+
+	digits = 1;
+	n_cpy = n;
+	while (n_cpy / 10)
+	{
+		n_cpy = n_cpy / 10;
+		digits++;
+	}
+	return (digits);
+}
+
+char	expo_dec(int digits, int n)
+{
+	int		dec;
+	int		d_cpy;
+	char	result;
+
+	d_cpy = digits;
+	dec = 1;
+	while (d_cpy - 1)
+	{
+		dec = dec * 10;
+		d_cpy--;
+		printf("dec total = %d\n", dec);
+	}
+	if (dec == 0)
+		dec++;
+	result = n / dec + '0';
+	return (result);
+}
+
 char	*ft_itoa(int n)
 {
-	int		n_cpy;
 	int		digits;
 	int		i;
 	char	*res;
+	int		n_cpy;
 
-	digits = 1;
 	if (!n)
 		return (NULL);
-	else
+	n_cpy = n;
+	digits = digit_count(n);
+	printf("digits value = %d\n", digits);
+	if (n < 0)
+		i = 1;
+	res = malloc(sizeof(char *) * (digits + 1 + i));
+	if (!res)
+		return (NULL);
+	printf("post malloc test\n");
+	i = 0;
+	/*`
+	if (n < 0)
 	{
-		n_cpy = n;
-		while (n_cpy/10 >= 1)
-		{
-			n_cpy = n_cpy / 10;
-			digits++;
-		}
-		printf("digits value = %d\n", digits);
-		res = malloc(sizeof(char *) * digits + 1);
-		if (!res)
-			return (NULL);
-		i = 0;
-		while (digits)
-		{
-			res[i] = (n / (n_cpy * digits) + '0';
-			digits--;
-		}
-		res[i] = '\0';
+		res[i] = '-';
+		i++;
+	}*/
+	while (i < digits)
+	{
+		res[i] = expo_dec(digits - i, n);
+		printf("res[i] == %c\n", res[i]);
+		i++;
 	}
+	res[i] = '\0';
 	return (res);
 }
 
@@ -55,3 +81,23 @@ int	main(void)
 	free(res);
 	return (0);
 }
+
+/*
+#include <stdio.h>
+int	main(void)
+{
+	int	digits;
+	int	i;
+
+	i = 2;
+	digits = 10;
+	printf("start: i = %d, digits = %d\n", i, digits);
+	while (digits--)
+	{
+		printf("iteration: i = %d, digits = %d\n", i, digits);
+		//digits--;
+		//i++;
+	}
+	printf("end i = %d, digits = %d\n", i, digits);
+	return (0);
+}*/
