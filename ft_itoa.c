@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 21:43:59 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/25 21:44:40 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/25 21:48:00 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ static char	*do_itoa(char *dst, int digits, int n)
 {
 	int		digits_cpy;
 	int		n_cpy;
-	char	result;
 
 	digits_cpy = digits;
 	n_cpy = n;
@@ -55,7 +54,7 @@ char	*ft_itoa(int n)
 	digits = digit_count(n);
 	if (n < 0)
 		digits++;
-	res = malloc(sizeof(char *) * (digits + 1));
+	res = malloc(sizeof(char) * (digits + 1));
 	if (!res)
 		return (NULL);
 	if (n < 0)
