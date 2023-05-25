@@ -1,8 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/05/25 21:43:59 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/05/25 21:44:40 by nmaturan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	digit_count(int n)
+static int	digit_count(int n)
 {
 	int	n_cpy;
 	int	digits;
@@ -17,87 +27,43 @@ int	digit_count(int n)
 	return (digits);
 }
 
-char	expo_dec(int digits, int n)
+static char	*do_itoa(char *dst, int digits, int n)
 {
-	int		dec;
-	int		d_cpy;
+	int		digits_cpy;
+	int		n_cpy;
 	char	result;
 
-	d_cpy = digits;
-	dec = 1;
-	while (d_cpy - 1)
+	digits_cpy = digits;
+	n_cpy = n;
+	dst[digits_cpy] = '\0';
+	while (digits_cpy > 0)
 	{
-		dec = dec * 10;
-		d_cpy--;
-		printf("dec total = %d\n", dec);
+		dst[digits_cpy - 1] = n_cpy % 10 + '0';
+		n_cpy = n_cpy / 10;
+		digits_cpy--;
 	}
-	if (dec == 0)
-		dec++;
-	result = n / dec + '0';
-	return (result);
+	return (dst);
 }
 
 char	*ft_itoa(int n)
 {
 	int		digits;
-	int		i;
 	char	*res;
-	int		n_cpy;
 
-	if (!n)
-		return (NULL);
-	n_cpy = n;
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	digits = digit_count(n);
-	printf("digits value = %d\n", digits);
 	if (n < 0)
-		i = 1;
-	res = malloc(sizeof(char *) * (digits + 1 + i));
+		digits++;
+	res = malloc(sizeof(char *) * (digits + 1));
 	if (!res)
 		return (NULL);
-	printf("post malloc test\n");
-	i = 0;
-	/*`
 	if (n < 0)
 	{
-		res[i] = '-';
-		i++;
-	}*/
-	while (i < digits)
-	{
-		res[i] = expo_dec(digits - i, n);
-		printf("res[i] == %c\n", res[i]);
-		i++;
+		res[0] = '-';
+		*(res + 1) = *do_itoa(res + 1, digits - 1, -n);
 	}
-	res[i] = '\0';
+	else
+		res = do_itoa(res, digits, n);
 	return (res);
 }
-
-int	main(void)
-{
-	char	*res;
-
-	res = ft_itoa(10);
-	printf("ft_itoa == %s\n", res);
-	free(res);
-	return (0);
-}
-
-/*
-#include <stdio.h>
-int	main(void)
-{
-	int	digits;
-	int	i;
-
-	i = 2;
-	digits = 10;
-	printf("start: i = %d, digits = %d\n", i, digits);
-	while (digits--)
-	{
-		printf("iteration: i = %d, digits = %d\n", i, digits);
-		//digits--;
-		//i++;
-	}
-	printf("end i = %d, digits = %d\n", i, digits);
-	return (0);
-}*/
