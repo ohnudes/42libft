@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:35:29 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/25 21:56:13 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/26 15:05:48 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	//if (!count)
-	//	return (ft_strdup(""));
 	ptr = malloc(size * count);
 	if (!ptr)
 		return (NULL);

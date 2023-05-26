@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 09:59:50 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/23 13:34:05 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/26 15:02:55 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,25 +80,3 @@ char	**ft_split(const char *s, const char c)
 	big[little] = NULL;
 	return (big);
 }
-/*
-int	main(void)
-{
-	//char *a = "";
-	//const char c = '\0';
-	char *a = "      split       this for   me  !       ";
-	const char c = ' ';
-	size_t	i = 0;
-
-	char **result = ft_split(a, c);
-	if (!result)
-		free(result);
-	else
-	{
-		while (i <= str_count(a, c))
-		{
-			printf("substring %zu == %s\n", i, result[i]);
-			i++;
-		}
-	}
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:36:01 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/16 14:36:03 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/26 15:02:43 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,3 @@ void	*ft_memcpy(void	*dst, const void *src, size_t n)
 	}
 	return (c_dst);
 }
-
-// e.cases: if n == 0
-/*
-int	main(int c, char *argv[1])
-{
-	char	dst[20];
-	char	ndst[20];
-
-	ft_memcpy(0, 0, 3);
-	printf("post ft dst = %s\n", dst);
-	//memcpy(0, 0, 3);
-	//printf("post O dst = %s\n", dst);
-	return(0);
-}*/
