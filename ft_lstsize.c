@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 23:16:54 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/27 23:19:43 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:31:46 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
+	t_list	*tmp;
 	size_t	i;
 
 	i = 0;
-	while (lst)
+	while (tmp)
 	{
-		lst = lst->next;
+		tmp = lst->next;
 		i++;
 	}
 	return (i);

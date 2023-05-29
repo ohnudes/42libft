@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 23:20:32 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/27 23:22:39 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:32:36 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 t_list	*ft_lstlast(t_list *lst)
 {
 	while (lst)
-		lst = lst->next;	
+		lst = lst->next;
 	return (lst);
 }

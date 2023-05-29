@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 23:23:23 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/27 23:41:57 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:33:52 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*ref;
+	t_list	*last;
 
 	if(*lst)
 	{
-		ref = ft_lstlast(*lst);
-		ref->next = new;
+		last = ft_lstlast(*lst);
+		last->next = new;
 	}
 	else 
 		*lst = new;
