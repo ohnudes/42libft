@@ -14,7 +14,33 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	while (lst)
-		lst = lst->next;
-	return (lst);
+	t_list	*tmp;
+
+	if (!lst)
+		return NULL;
+	tmp = lst; 
+	while (tmp->next)
+		tmp = tmp->next;
+	return (tmp);
 }
+/*
+t_list	*reverse(t_list *lst)
+{
+	t_list	*curr;
+	t_list	*fwd;
+	t_list	*prev;
+
+	curr = lst;
+	prev = NULL;
+	while (lst)
+	{
+		// modificar referencia
+		fwd = curr->next;
+		curr->next = prev; 
+
+		// moverse 
+		prev = curr;
+		curr = fwd;
+	}	
+	return (prev);
+}*/

@@ -16,40 +16,13 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*fwd;
-	t_list	*node;
 
-	node = *lst;
-	while (node)
+	while (*lst)
 	{
-		fwd = node->next;
-		ft_lstdelone(node, del);
-		free(node);
+		fwd = (*lst)->next;
+		ft_lstdelone(*lst, del);
 		if (fwd)
-			node = fwd;
+			*lst = fwd;
 	}
-	lst = NULL;
-}
-
-// clearing of lst of lsts?
-void	ft_lstclear(t_list **lst, void (*del)(void *))
-{
-	t_list	*fwd;
-	t_list	*fwdlst;
-	t_list	*node;
-
-	while	(lst)
-	{
-		node = *lst;
-		fwdlst = node->next;
-		while (node)
-		{
-			fwd = node->next;
-			ft_lstdelone(node, del);
-			free(node);
-			if (fwd)
-				node = fwd;
-		}
-		lst = NULL;
-		node = fwdlst;
-	}
+	*lst = NULL;
 }
