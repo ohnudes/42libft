@@ -51,10 +51,7 @@ $(NAME): $(OBJ)
 	@gcc -c $(FLAGS) $< -o $@  
 
 bonus: $(NAME) $(OBJ_BONUS)
-	@$(LNK) $(NAME) $(OBJ_BONUS)
-
-$(OBJ_BONUS): $(SRC_BONUS) $(DEPS) 
-	@cc $(FLAGS) -c $< -o $@
+	@$(LNK) $(NAME) $(OBJ_BONUS) $(OBJ)
 
 fclean: clean
 	@rm -f $(NAME) 
