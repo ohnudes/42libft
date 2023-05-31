@@ -1,0 +1,68 @@
+# get_next_line
+
+'char    *get_next_ine(int fd)';
+
+---
+
+## Journal
+
+### 31 june
+
+1. Static variables
+2. undefined behavior
+3. Read and buffersize
+4. file descriptor
+
+---
+
+### Static variables
+
+*The data stored inside static variables persist and is not deleted between calls,* unlike
+their normal equivalents.
+
+> Static variables are initialized as 0 if not initialized exlpicitly.
+
+> Data stackked in **data segment** and not in stack.
+
+> NEVER use static variables inside a structure.
+
+### file descriptor
+declared as positive int numbers.
+
+Channels of data. Standards are: 
+0 = stdin; --input
+1 = stdout; --output
+2 = stderr; --errors
+
+#### Types of operation
+such as *creating file descriptors*
+    such as open(), socket(), pipe()
+
+as *operations on a single file descriptor*
+    such as read(), write(), recv(), send()
+
+as *operation on multiple file descriptors*
+
+etc.
+
+#### read()
+
+ssize_t read(int fd, void *buf, size_t  count)
+
+Arguments:
+1.  fd from file.
+2.  the buffer where the read data is to be stored
+3.  numer of bytes to be read from the file
+
+Function used by program to access data from a file stored in a file system.
+Such access is done throught a file descriptor channel (int fd), given as result
+of function open().
+
+Function returns the number of bytes read, and the file position is advanced by that number.
+    Function returns 0 if EOF.
+Function returns (-1) when error occurs (if errno is set).
+
+### Tools for get_next_line
+-   Static variables, for .keeping a buffer between calls(?)
+-   File descriptor function = read()
+-   
