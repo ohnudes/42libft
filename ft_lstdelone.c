@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 23:43:23 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/27 23:48:49 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/30 19:35:15 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)
-		return;
+		return ;
 	del(lst->content);
-	free(lst->content);
+	free(lst);
 }

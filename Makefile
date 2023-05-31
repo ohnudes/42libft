@@ -6,7 +6,7 @@
 #    By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/16 14:32:57 by nmaturan          #+#    #+#              #
-#    Updated: 2023/05/25 21:46:08 by nmaturan         ###   ########.fr        #
+#    Updated: 2023/05/30 19:32:06 by nmaturan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ OBJ = $(SRC:.c=.o)
 
 # Bonus
 SRC_BONUS = ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-	ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstnew.c
+	ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstnew.c ft_lstmap.c
 
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 

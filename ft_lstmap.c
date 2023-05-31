@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 00:12:06 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/28 00:19:08 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/05/30 20:27:25 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,23 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*tmp;
+	t_list	*new_node;
+	t_list	*new_head;
+	void	*content;
 
-	t
-	while(lst)
+	new_head = NULL;
+	while (lst)
 	{
-		if (del)
-			tmp = lst->next;
-		f(lst->next);
+		content = f(lst->content);
+		new_node = ft_lstnew(content);
+		if (!new_node)
+		{
+			del(content);
+			ft_lstclear(&new_head, del);
+			return (NULL);
 		}
+		ft_lstadd_back(&new_head, new_node);
+		lst = lst->next;
+	}
+	return (new_head);
 }
