@@ -6,7 +6,7 @@
 #    By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/16 14:32:57 by nmaturan          #+#    #+#              #
-#    Updated: 2023/05/30 19:32:06 by nmaturan         ###   ########.fr        #
+#    Updated: 2023/06/09 22:29:16 by nmaturan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,8 +36,9 @@ OBJ = $(SRC:.c=.o)
 
 # Bonus
 
-SRC_BONUS = ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-	ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstnew.c ft_lstmap.c
+SRC_BONUS = ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
+			ft_lstadd_back_bonus.c	ft_lstclear_bonus.c ft_lstdelone_bonus.c \
+			ft_lstiter_bonus.c ft_lstnew_bonus.c ft_lstmap_bonus.c
 
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
@@ -51,8 +52,8 @@ $(NAME): $(OBJ)
 %.o: %.c $(INC)
 	gcc -c $(FLAGS) $< -o $@  
 
-bonus: $(OBJ_BONUS) $(NAME)	
-	$(LNK) $@ $(OBJ_BONUS)
+bonus: $(OBJ) $(OBJ_BONUS)
+	$(LNK) $(NAME) $(OBJ) $(OBJ_BONUS)
 	@touch bonus
 
 fclean: clean
