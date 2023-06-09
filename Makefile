@@ -19,8 +19,8 @@ FLAGS = -Wall -Wextra -Werror
 # Flags for linking
 LNK = ar rc
 
-# Dependencies
-DEPS = libft.h
+# Include
+INC = libft.h
 
 # Functions
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
@@ -35,6 +35,7 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 OBJ = $(SRC:.c=.o)
 
 # Bonus
+
 SRC_BONUS = ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 	ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstnew.c ft_lstmap.c
 
@@ -45,21 +46,23 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ) 
-	@$(LNK) $@ $^ 
+	$(LNK) $@ $^ 
 
-%.o: %.c $(DEPS)
-	@gcc -c $(FLAGS) $< -o $@  
+%.o: %.c $(INC)
+	gcc -c $(FLAGS) $< -o $@  
 
-bonus: $(NAME) $(OBJ_BONUS)
-	@$(LNK) $(NAME) $(OBJ_BONUS) $(OBJ)
+bonus: $(OBJ_BONUS) $(NAME)	
+	$(LNK) $@ $(OBJ_BONUS)
+	@touch bonus
 
 fclean: clean
 	@rm -f $(NAME) 
-	@rm -f $(OBJ_BONUS)
 
 clean:
 	@rm -f $(OBJ)
+	@rm -f $(OBJ_BONUS)
+	@rm -f bonus
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
