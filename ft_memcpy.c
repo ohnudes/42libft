@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:36:01 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/26 15:02:43 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/10/02 21:31:16 by ohadmin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	*ft_memcpy(void	*dst, const void *src, size_t n)
 	size_t	index;
 	char	*c_dst;
 
-	index = 0;
-	c_dst = (char *)dst;
 	if (!src && !dst)
 		return (NULL);
+	index = 0;
+	c_dst = (char *)dst;
 	while (index < n)
 	{
 		c_dst[index] = *(char *)(src + index);
