@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:34:20 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/10/22 20:21:03 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/10/22 20:31:32 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include "ft_printf/ft_printf.h"
-# include "get_next_line/get_next_line.h"
+//# include "ft_printf/ft_printf.h"
+//# include "get_next_line/get_next_line.h"
 
 typedef struct s_list
 {
@@ -38,6 +38,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+int		ft_isspace(int c);
 
 /* writting to fd */
 void	ft_putchar_fd(char c, int fd);
