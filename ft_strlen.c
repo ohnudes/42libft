@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 14:33:12 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/16 14:33:16 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/10/22 20:22:13 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	counter;
+	size_t	i;
 
-	counter = 0;
-	while (*s++)
-		counter++;
-	return (counter);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
