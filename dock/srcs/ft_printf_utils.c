@@ -6,11 +6,11 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 14:06:29 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/07/31 18:19:36 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/10/23 14:34:04 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 void	ft_putptr(t_lc *total, void *p)
 {

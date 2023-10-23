@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/26 18:26:17 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/29 14:28:59 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/08/30 18:30:45 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/10/23 14:44:30 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-t_list	*ft_lstnew(void *content)
-{
-	t_list	*node;
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10000000
+# endif 
 
-	node = (void *) malloc(sizeof(t_list));
-	if (!node)
-		return (NULL);
-	node->content = content;
-	node->next = NULL;
-	return (node);
-}
+# include <unistd.h>
+# include <stdlib.h>
+# include "libft.h"
+
+/* main corpus */
+char	*get_next_line(int fd);
+
+/* utils */
+char	*gnl_strchr(const char *str, char set);
+char	*ft_strappend(char *first, char *second, int rbytes);
+char	*ft_free(char *str);
+
+#endif

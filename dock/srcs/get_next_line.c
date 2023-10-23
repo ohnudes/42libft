@@ -6,11 +6,11 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 18:25:50 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/10/22 21:08:45 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/10/23 14:33:27 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../includes/get_next_line.h"
 
 static char	*clean_content(char *content, char *eol)
 {
@@ -83,8 +83,8 @@ static char	*fill_content(char *content, int rbytes, int fd, char **eol)
 		if (rbytes > 0)
 		{
 			content = ft_strappend(content, tmp, rbytes);
-			if (ft_strchr(tmp, '\n'))
-				*eol = ft_strchr(content, '\n');
+			if (gnl_strchr(tmp, '\n'))
+				*eol = gnl_strchr(content, '\n');
 		}
 		else if (rbytes == -1 || !content)
 			content = ft_free(content);
@@ -107,7 +107,7 @@ char	*get_next_line(int fd)
 	line = NULL;
 	eol = NULL;
 	rbytes = 0;
-	eol = ft_strchr(content[fd], '\n');
+	eol = gnl_strchr(content[fd], '\n');
 	if (!eol)
 		content[fd] = fill_content(content[fd], rbytes, fd, &eol);
 	if (content[fd] && *content[fd] != '\0')

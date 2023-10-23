@@ -1,37 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/16 14:34:56 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/16 22:07:33 by nmaturan         ###   ########.fr       */
+/*   Created: 2023/05/16 14:32:37 by nmaturan          #+#    #+#             */
+/*   Updated: 2023/10/23 14:34:25 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+void	ft_bzero(void *mem, size_t n)
 {
-	size_t	i;
-	size_t	j;
+	size_t	counter;
+	char	*ptr;
 
-	i = 0;
-	j = 0;
-	if (!*little)
-		return ((char *)big);
-	while (big[i] && len - i >= ft_strlen(little))
+	counter = 0;
+	ptr = (char *)mem;
+	while (counter < n)
 	{
-		if (big[i + j] == little[j])
-		{
-			j = 0;
-			while (big[i + j] == little[j] && big[i + j] && little[j])
-				j++;
-			if (little[j] == 0)
-				return ((char *)big + i);
-		}
-		i++;
+		ptr[counter] = '\0';
+		counter++;
 	}
-	return (NULL);
 }

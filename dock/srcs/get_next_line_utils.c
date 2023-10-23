@@ -6,11 +6,11 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 18:30:58 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/09/07 17:27:46 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/10/23 14:33:36 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../includes/get_next_line.h"
 
 size_t	ft_strlen(const char *str)
 {
@@ -52,7 +52,7 @@ char	*ft_strappend(char *first, char *second, int rbytes)
 	return (newstr);
 }
 
-char	*ft_strchr(const char *str, char set)
+char	*gnl_strchr(const char *str, char set)
 {
 	char	*occurrence;
 

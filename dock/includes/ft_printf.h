@@ -6,7 +6,7 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 14:07:50 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/07/30 18:54:39 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/10/23 14:43:33 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdarg.h>
 # include <unistd.h>
+# include "libft.h"
 
 typedef struct s_lc
 {
