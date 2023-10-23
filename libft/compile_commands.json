@@ -1,0 +1,866 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_isalpha.o",
+      "srcs/ft_isalpha.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_isalpha.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_isalpha.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_isdigit.o",
+      "srcs/ft_isdigit.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_isdigit.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_isdigit.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_isalnum.o",
+      "srcs/ft_isalnum.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_isalnum.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_isalnum.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_isascii.o",
+      "srcs/ft_isascii.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_isascii.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_isascii.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_isprint.o",
+      "srcs/ft_isprint.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_isprint.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_isprint.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_toupper.o",
+      "srcs/ft_toupper.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_toupper.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_toupper.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_tolower.o",
+      "srcs/ft_tolower.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_tolower.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_tolower.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_atoi.o",
+      "srcs/ft_atoi.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_atoi.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_atoi.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strncmp.o",
+      "srcs/ft_strncmp.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strncmp.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strncmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strnstr.o",
+      "srcs/ft_strnstr.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strnstr.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strnstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strchr.o",
+      "srcs/ft_strchr.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strchr.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strrchr.o",
+      "srcs/ft_strrchr.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strrchr.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strrchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strlen.o",
+      "srcs/ft_strlen.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strlen.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strlen.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strlcpy.o",
+      "srcs/ft_strlcpy.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strlcpy.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strlcpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strlcat.o",
+      "srcs/ft_strlcat.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strlcat.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strlcat.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_bzero.o",
+      "srcs/ft_bzero.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_bzero.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_bzero.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_memset.o",
+      "srcs/ft_memset.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_memset.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_memset.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_memcpy.o",
+      "srcs/ft_memcpy.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_memcpy.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_memcpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_memmove.o",
+      "srcs/ft_memmove.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_memmove.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_memmove.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_memchr.o",
+      "srcs/ft_memchr.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_memchr.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_memchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_memcmp.o",
+      "srcs/ft_memcmp.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_memcmp.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_memcmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_calloc.o",
+      "srcs/ft_calloc.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_calloc.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_calloc.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strdup.o",
+      "srcs/ft_strdup.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strdup.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strdup.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_substr.o",
+      "srcs/ft_substr.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_substr.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_substr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strjoin.o",
+      "srcs/ft_strjoin.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strjoin.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strjoin.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strtrim.o",
+      "srcs/ft_strtrim.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strtrim.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strtrim.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_split.o",
+      "srcs/ft_split.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_split.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_split.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_strmapi.o",
+      "srcs/ft_strmapi.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_strmapi.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_strmapi.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_striteri.o",
+      "srcs/ft_striteri.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_striteri.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_striteri.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_putchar_fd.o",
+      "srcs/ft_putchar_fd.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_putchar_fd.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_putchar_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_putstr_fd.o",
+      "srcs/ft_putstr_fd.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_putstr_fd.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_putstr_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_putendl_fd.o",
+      "srcs/ft_putendl_fd.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_putendl_fd.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_putendl_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_putnbr_fd.o",
+      "srcs/ft_putnbr_fd.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_putnbr_fd.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_putnbr_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_itoa.o",
+      "srcs/ft_itoa.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_itoa.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_itoa.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_isspace.o",
+      "srcs/ft_isspace.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_isspace.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_isspace.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstadd_front_bonus.o",
+      "srcs/ft_lstadd_front_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstadd_front_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstadd_front_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstsize_bonus.o",
+      "srcs/ft_lstsize_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstsize_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstsize_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstlast_bonus.o",
+      "srcs/ft_lstlast_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstlast_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstlast_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstadd_back_bonus.o",
+      "srcs/ft_lstadd_back_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstadd_back_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstadd_back_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstclear_bonus.o",
+      "srcs/ft_lstclear_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstclear_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstclear_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstdelone_bonus.o",
+      "srcs/ft_lstdelone_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstdelone_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstdelone_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstiter_bonus.o",
+      "srcs/ft_lstiter_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstiter_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstiter_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstnew_bonus.o",
+      "srcs/ft_lstnew_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstnew_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstnew_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_lstmap_bonus.o",
+      "srcs/ft_lstmap_bonus.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_lstmap_bonus.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_lstmap_bonus.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/get_next_line.o",
+      "srcs/get_next_line.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/get_next_line.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/get_next_line.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/get_next_line_utils.o",
+      "srcs/get_next_line_utils.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/get_next_line_utils.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/get_next_line_utils.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_printf.o",
+      "srcs/ft_printf.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_printf.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_printf.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "includes/",
+      "-c",
+      "-o",
+      "objs/ft_printf_utils.o",
+      "srcs/ft_printf_utils.c"
+    ],
+    "directory": "/home/ohnudes/documents/42/libft/libft",
+    "file": "/home/ohnudes/documents/42/libft/libft/srcs/ft_printf_utils.c",
+    "output": "/home/ohnudes/documents/42/libft/libft/objs/ft_printf_utils.o"
+  }
+]
