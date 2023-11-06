@@ -6,77 +6,84 @@
 /*   By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 09:59:50 by nmaturan          #+#    #+#             */
-/*   Updated: 2023/05/26 15:02:55 by nmaturan         ###   ########.fr       */
+/*   Updated: 2023/11/06 13:07:20 by nmaturan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	**free_all(char **big, size_t little)
+typedef struct s_split
 {
-	while (little)
+	char	**vector;
+	size_t	word_count;
+	size_t	count;
+}				t_split;
+
+static char	**free_all(char **vector, size_t count)
+{
+	while (count)
 	{
-		little--;
-		free(big[little]);
+		count--;
+		free(vector[count]);
 	}
-	free(big);
+	free(vector);
 	return (NULL);
 }
 
-static size_t	str_count(const char *s, const char c)
+static size_t	str_count(const char *str, const char c)
 {
 	size_t	count;
 	size_t	i;
 
 	i = 0;
 	count = 0;
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if (s[i] != c)
+		if (str[i] != c)
 			count++;
-		while (s[i] && s[i] != c)
+		while (str[i] && str[i] != c)
 			i++;
-		while (s[i] && s[i] == c)
+		while (str[i] && str[i] == c)
 			i++;
 	}
 	return (count);
 }
 
-static size_t	str_len(const char *s, const char c)
+static size_t	str_len(const char *str, const char c)
 {
 	size_t	len;
 
 	len = 0;
-	while (s[len] && s[len] != c)
+	while (str[len] && str[len] != c)
 		len++;
 	return (len);
 }
 
-char	**ft_split(const char *s, const char c)
+char	**ft_split(const char *str, const char c)
 {
-	char	**big;
-	size_t	little;
+	t_split	data;
 	size_t	i;
 
-	big = malloc(sizeof(char **) * (str_count(s, c) + 1));
-	if (!big)
+	data = (t_split){};
+	data.word_count = str_count(str, c);
+	data.vector = malloc(sizeof(char **) * (data.word_count + 1));
+	if (!data.vector)
 		return (NULL);
-	little = 0;
 	i = 0;
-	while (little < str_count(s, c))
+	while (data.count < data.word_count)
 	{
-		if (s[i] && s[i] != c)
+		if (str[i] && str[i] != c)
 		{
-			big[little] = ft_substr(s, i, str_len((s + i), c));
-			if (!big[little])
-				return (free_all(big, little));
-			little++;
+			data.vector[data.count] = ft_substr(str, i, str_len((str + i), c));
+			if (!data.vector[data.count])
+				return (free_all(data.vector, data.count));
+			data.count++;
 		}
-		while (s[i] && s[i] != c)
+		while (str[i] && str[i] != c)
 			i++;
-		while (s[i] && s[i] == c)
+		while (str[i] && str[i] == c)
 			i++;
 	}
-	big[little] = NULL;
-	return (big);
+	data.vector[data.count] = NULL;
+	return (data.vector);
 }

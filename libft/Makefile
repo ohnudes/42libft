@@ -6,7 +6,7 @@
 #    By: nmaturan <nmaturan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/16 14:32:57 by nmaturan          #+#    #+#              #
-#    Updated: 2023/10/23 14:42:00 by nmaturan         ###   ########.fr        #
+#    Updated: 2023/11/06 13:26:02 by nmaturan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,13 +56,13 @@ all: obj $(NAME)
 
 $(NAME): $(OBJ) 
 	@echo Creating library $(NAME)...
-	$(LNK) $@ $^ 
+	@$(LNK) $@ $^ 
 
 obj:
 	@mkdir -p $(OBJ_DIR)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(INCS) Makefile
-	gcc $(FLAGS) -I $(INC_DIR) -c $< -o $@  
+	@gcc $(FLAGS) -I $(INC_DIR) -c $< -o $@  
 
 fclean: clean
 	@rm -f $(NAME) 
